@@ -1,0 +1,10 @@
+name: Example Users REST
+description: 'Modulo que expone un servcio restfull'
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - example_module
+  - rest
+package: 'Custom'
