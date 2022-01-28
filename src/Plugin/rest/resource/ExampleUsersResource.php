@@ -83,7 +83,6 @@ class ExampleUsersResource extends ResourceBase {
       return $responseRecords;
     }
     catch (\Exception $e) {
-      // Log the exception to watchdog.
       \Drupal::logger('example_users_rest')->error($e->getMessage());
     }
   }
@@ -130,8 +129,7 @@ class ExampleUsersResource extends ResourceBase {
         $response = new ResourceResponse($responseRecords);
       }
     }
-    catch (\Exception $e) {
-      // Log the exception to watchdog.
+    catch (\Exception $e) {      
       \Drupal::logger('example_users_rest')->error($e->getMessage());
       $response = new ResourceResponse($e->getMessage(), 500);
     }
