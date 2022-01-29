@@ -1,4 +1,4 @@
-name: Example Users REST
+name: example-users-rest
 description: 'Modulo que expone un servcio restfull'
 type: module
 core: 8.x
